@@ -31,6 +31,7 @@ C_AGENT_CFLAGS += -Wpointer-arith
 C_AGENT_CFLAGS += -Wshadow
 C_AGENT_CFLAGS += -Wstrict-prototypes
 C_AGENT_CFLAGS += -Wswitch-enum
+C_AGENT_CFLAGS += -Wno-implicit-fallthrough
 
 ifeq (1,$(HAVE_CLANG))
 C_AGENT_CFLAGS += -Wbool-conversion
@@ -46,6 +47,7 @@ C_AGENT_CFLAGS += -Wswitch-enum
 C_AGENT_CFLAGS += -Wuninitialized
 C_AGENT_CFLAGS += -Wunused-label
 C_AGENT_CFLAGS += -Wno-typedef-redefinition
+C_AGENT_CFLAGS += -Wno-implicit-fallthrough
 endif
 
 #
